@@ -1,0 +1,44 @@
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main img {
+  width: 150px;
+  height: auto;
+}
+
+aside {
+  width: 300px;
+  margin: 1rem auto;
+  border: 1px solid #333;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+p {
+  padding: 0;
+}
+
+footer {
+  margin-top: 2rem;
+  border-top: 2px solid #999;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}

@@ -1,14 +1,40 @@
-
-main {
-  max-width: 800px;
-  margin: 0 auto;
+/* nav rule */
+nav {
+  background-color: #333;
+  padding: 1em;
+  text-align: center;
 }
 
-main img {
-  width: 150px;
+/* nav anchor rule */
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* heading 1 rule */
+h1 {
+  font-size: 2em;
+  text-align: center;
+  color: #333;
+}
+
+/* img rule (global rule for all images) */
+img {
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 
+/* main rule with max-width */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* aside rule */
 aside {
   width: 300px;
   margin: 1em auto;
@@ -18,17 +44,28 @@ aside {
   color: #000;
 }
 
+/* aside img rule */
 aside img {
-  width: 200px;
+  width: 100%;
   height: auto;
+  display: block;
 }
 
+/* paragraph rule */
 p {
   padding: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #333;
 }
 
+/* footer rule */
 footer {
   margin-top: 2em;
   border-top: 2px solid #999;
   text-align: center;
+  padding: 1em 0;
+  background-color: #f9f9f9;
+  color: #555;
+  font-size: 0.9em;
 }

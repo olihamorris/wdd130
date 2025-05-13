@@ -20,7 +20,7 @@ h1 {
   color: #333;
 }
 
-/* img rule (global rule for all images) */
+/* global img rule */
 img {
   display: block;
   max-width: 100%;
@@ -34,6 +34,12 @@ main {
   padding: 1em;
 }
 
+/* main-specific image rule */
+main img {
+  width: 150px;
+  height: auto;
+}
+
 /* aside rule */
 aside {
   width: 300px;
@@ -44,9 +50,9 @@ aside {
   color: #000;
 }
 
-/* aside img rule */
+/* aside image rule (fixed width to meet assignment requirement) */
 aside img {
-  width: 100%;
+  width: 200px;
   height: auto;
   display: block;
 }

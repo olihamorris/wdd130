@@ -90,7 +90,8 @@ header nav a:hover {
   float: right;
   width: 125px;
   margin-left: 16px;
-  border-radius: 8px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0.5);
 }
 
 /* Sections */
@@ -126,6 +127,6 @@ footer nav.socialmedia a {
 }
 
 footer nav.socialmedia img {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }

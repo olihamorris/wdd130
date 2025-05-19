@@ -1,9 +1,9 @@
  /* Root Variables */
 :root {
-  --primary-color: #0077B6; 
-  --secondary-color: #F1FAFF;
-  --accent1-color: #2F5233;
-  --accent2-color: #E76F51;
+  --primary-color: #0077B6; /* deep blue */
+  --secondary-color: #F1FAFF; /* soft white */
+  --accent1-color: #2F5233; /* dark green */
+  --accent2-color: #E76F51; /* warm orange */
   --heading-font: 'Bruno Ace SC', sans-serif;
   --body-font: 'Open Sans', sans-serif;
   --highlight-font: 'Roboto', sans-serif;
@@ -32,14 +32,14 @@ header, main, footer {
 /* Header */
 header {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--accent2-color);
   padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header img
+header img {
   height: 60px;
 }
 
@@ -52,6 +52,18 @@ header nav a {
 
 header nav a:hover {
   text-decoration: underline;
+}
+
+/* Typography */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
 }
 
 /* Hero Section */
@@ -73,15 +85,16 @@ header nav a:hover {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: white;
+  color: #fff;
 }
 
 .hero article {
   position: absolute;
   top: 120px;
+  width: 100%
   left: 16px;
   right: 16px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--accent1-color);
   padding: 16px;
   border-radius: 8px;
 }
@@ -91,21 +104,10 @@ header nav a:hover {
   width: 125px;
   margin-left: 16px;
   border-radius: 6px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0.5);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Sections */
-section {
-  margin: 16px;
-  padding: 8px;
-}
-
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-bottom: 8px;
-}
-
+/* Section Images */
 section img {
   width: 100%;
   height: auto;
@@ -121,9 +123,13 @@ footer {
   text-align: center;
 }
 
+footer nav.socialmedia {
+  margin-top: 8px;
+}
+
 footer nav.socialmedia a {
-  margin: 0 8px;
   text-decoration: none;
+  margin: 0 8px;
 }
 
 footer nav.socialmedia img {

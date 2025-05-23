@@ -101,26 +101,33 @@ nav a:hover {
 
 .history {
   display: flex;
-  flex-wrap: wrap;
-  background-color: #e1f5fe;
-  padding: 40px 20px;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
   align-items: center;
+  gap: 24px;
+  background-color: #e1f5fe;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .history .text {
-  flex: 1 2 300px;
-  margin: 10px;
+  flex: 1;
+  max-width: 400;
 }
 
 .history figure {
-  flex: 1 1 300px;
-  margin: 10px;
+  margin: 0;
+  display: block;
+  flex: 0 0 auto;
 }
 
 .history img {
-  width: 100%;
-  border-radius: 10px;
+  width: 300px;
+  border-radius: 8px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .adventures {

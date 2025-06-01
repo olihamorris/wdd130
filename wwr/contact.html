@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Rapids White-Water Rafting Co.for reservations, inquiries, and suggestions." />
-  <meta name="author" content="Morris Oliha" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Rapids White-Water Rafting Co. for reservations, inquiries, and suggestions.">
+  <meta name="author" content="Morris Oliha">
   <title>Contact Us - Rapids White-Water Rafting</title>
 
   <!-- Google Fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Link to CSS -->
-  <link rel="stylesheet" href="styles/rafting.css" />
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
   <header>
-    <img src="images/logo.webp" alt="WWR Logo" height="60" />
+    <img src="images/logo.webp" alt="WWR Logo" height="60">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -37,9 +37,15 @@
       <p><strong>Phone:</strong> (234) 456-7890</p>
       <p><strong>Email:</strong> contact@rapidsrafting.com</p>
       <div class="map">
-         <!--Google Map Embeded-->
-            <h3>Find Us on the Map</h3>
-            <iframesrc="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15810.287335014442!2d3.2409648!3d6.5701026!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9bc73338fc75%3A0x5403b1b01761d04a!2s12%20Joe%20Ezeh%20Ave%2C%20Ikotun%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1679198922801!5m2!1sen!2sng"width="600" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframesrc=> 
+        <h3>Find Us on the Map</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15810.287335014442!2d3.2409648!3d6.5701026!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9bc73338fc75%3A0x5403b1b01761d04a!2s12%20Joe%20Ezeh%20Ave%2C%20Ikotun%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1679198922801!5m2!1sen!2sng" 
+          width="600" 
+          height="400" 
+          allowfullscreen 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </section>
 
@@ -47,15 +53,15 @@
       <h2>Meet Our Team</h2>
       <div class="profiles">
         <figure>
-          <img src="images/nnena.webp" alt="Nnena, Customer Support" />
+          <img src="images/nnena.webp" alt="Nnena, Customer Support">
           <figcaption>Nnena – Customer Support</figcaption>
         </figure>
         <figure>
-          <img src="images/nnana.webp" alt="Nnana, Tour Guide" />
+          <img src="images/nnana.webp" alt="Nnana, Tour Guide">
           <figcaption>Nnana – Senior Tour Guide</figcaption>
         </figure>
         <figure>
-          <img src="images/naiven.webp" alt="Naiven, Marketing" />
+          <img src="images/naiven.webp" alt="Naiven, Marketing">
           <figcaption>Naiven – Marketing Manager</figcaption>
         </figure>
       </div>
@@ -65,24 +71,37 @@
       <h2>Send Us a Message</h2>
       <form action="#" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="name" name="name" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" required>
 
         <fieldset>
           <legend>Purpose of Message:</legend>
-          <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label><br />
-          <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label><br />
-          <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
+
+          <div>
+            <input type="radio" id="general" name="purpose" value="general" required>
+            <label for="general">General Inquiry</label>
+          </div>
+
+          <div>
+            <input type="radio" id="reservation" name="purpose" value="reservation">
+            <label for="reservation">Reservation Question</label>
+          </div>
+
+          <div>
+            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+            <label for="suggestion">Website Suggestion</label>
+          </div>
         </fieldset>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label>
-          <input type="checkbox" name="newsletter" /> Please subscribe me to the monthly newsletter
-        </label>
+        <div>
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+        </div>
 
         <button type="submit">Send Message</button>
       </form>
@@ -91,12 +110,12 @@
 
   <footer>
     <p>&copy; 2025 Rapids White-Water Rafting Co. | Morris Oliha</p>
-    <nav class="socialmedia" aria-label="social media Links">
-      <a href="#"><img src="images/facebook.webp" alt="Facebook" /></a>
-      <a href="#"><img src="images/twitter.webp" alt="Twitter" /></a>
-      <a href="#"><img src="images/instagram.webp" alt="Instagram" /></a>
+    <nav class="socialmedia" aria-label="social media links">
+      <a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.webp" alt="Twitter"></a>
+      <a href="#"><img src="images/instagram.webp" alt="Instagram"></a>
     </nav>
     <p><a href="images/contact-wireframe.png">View Wireframe</a></p>
   </footer>
 </body>
-</html> 
+</html>

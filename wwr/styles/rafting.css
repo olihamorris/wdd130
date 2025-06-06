@@ -296,7 +296,7 @@ main h1{
 }
 
 .contact-form textarea {
-  resize: vertical;
+  resize: vertical ;
 }
 
 .contact-form fieldset {
